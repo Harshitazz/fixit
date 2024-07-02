@@ -48,7 +48,7 @@ function Navbar({ onLoginSuccess, onLoginError }) {
               className=" rounded-sm border px-3 py-1.5 flex w-full min-w-max    font-bold 
               text-white border-transparent" 
             >
-              <GoogleLogin onSuccess={onLoginSuccess} onError={onLoginError} />
+              <GoogleLogin clientId="339516423200-gi1tb97aqthci5ub1ds56lc0esci094p.apps.googleusercontent.com" onSuccess={onLoginSuccess} onError={onLoginError} />
               </a>
           </div>
         </div>
