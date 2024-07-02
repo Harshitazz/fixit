@@ -1,0 +1,19 @@
+.animated-text {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .animated-text span {
+    display: inline-block;
+    animation: colorChange 0.2s forwards;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: darkblue; /* Initial color */
+    }
+    100% {
+      color: lightblue; /* Final color */
+    }
+  }
+  
