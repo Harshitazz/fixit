@@ -1,11 +1,11 @@
 // src/api/index.js
 
 export const askQuestion = async (question) => {
-  const response = await fetch('https://fixitapi-harshitazzs-projects.vercel.app/ask', {
+  const response = await fetch('https://fixitapi-harshitazzs-projects.vercel.app/ask',  {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      // 'Access-Control-Allow-Origin':'*'
+      'Access-Control-Allow-Origin':'*'
     },
     body: JSON.stringify({ question }),
   });
