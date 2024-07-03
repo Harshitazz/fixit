@@ -5,6 +5,7 @@ export const askQuestion = async (question) => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin':'*'
     },
     body: JSON.stringify({ question }),
   });
