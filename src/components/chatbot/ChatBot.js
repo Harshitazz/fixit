@@ -7,8 +7,6 @@ function ChatBot({ initialQuestion }) {
   const [answer, setAnswer] = useState("");
   const questions = ["What is your name?", "How are you?", "What can you do?"];
 
-
-
   const handleAskQuestion = async () => {
     try {
       const responseAnswer = await askQuestion(question);
@@ -32,29 +30,26 @@ function ChatBot({ initialQuestion }) {
       </div>
 
       {/* Input and Button */}
-      <div className="flex flex-col items-center  p-4 bg-gray-100 flex-grow">
-        
-
-        <div className=" relative w-[80%]">
+      <div className="flex flex-col items-center p-4 bg-gray-100 flex-grow">
+        <div className="relative w-[80%]">
           <div className="flex items-center border border-gray-300 rounded-md p-3 mx-5 shadow-md justify-between">
             <input
               type="text"
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
               placeholder="SalesGPT can help you to browse uncovered topics"
-              className="bg-transparent border-none rounded-[var(--cr-realbox-border-radius)] text-[var(--color-realbox-foreground)] font-inherit text-inherit h-full outline-none relative w-[400px]"
+              className="bg-transparent border-none rounded text-black font-inherit text-inherit h-full outline-none relative w-[400px]"
             />
             <button
               onClick={handleAskQuestion}
-              className="p-2 bg-transparent text-white rounded "
+              className="p-2 bg-transparent text-white rounded"
             >
-              <img 
-                        src="./right-arrow.png" 
-                        alt="Ask" 
-                        className="h-6 w-6"
-                    />
+              <img
+                src="./right-arrow.png"
+                alt="Ask"
+                className="h-6 w-6"
+              />
             </button>
-            
           </div>
         </div>
 
