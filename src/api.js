@@ -1,7 +1,7 @@
 // src/api/index.js
 
 export const askQuestion = async (question) => {
-  const response = await fetch('http://localhost:8000/ask', {
+  const response = await fetch('https://fixitapi-harshitazzs-projects.vercel.app/ask', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
