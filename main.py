@@ -28,6 +28,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 # Database setup and session dependency
 DATABASE_URL = "postgresql+asyncpg://flask_user:your_password@localhost/flask_app_db"
 engine = create_async_engine(DATABASE_URL, echo=True, future=True)
